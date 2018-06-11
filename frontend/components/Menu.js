@@ -5,6 +5,15 @@ import { Config } from "../config.js";
 const linkStyle = {
     marginRight: 15
 };
+const headerBarStyle = {
+    color: 'rgb(255, 255, 255)',
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '20px',
+    background: 'rgb(51, 63, 72)',
+}
 
 class Menu extends Component {
   constructor() {
@@ -40,11 +49,13 @@ class Menu extends Component {
 
 
     return(
-      <div>
-          <Link href="/">
-              <a style={linkStyle}>Home</a>
-          </Link>
-          {menuItems}
+      <div style={headerBarStyle}>
+          <div>
+            <Link href='/'>
+                <img src= alt=""/>
+            </Link>
+        </div>
+          <div>{menuItems}</div>
       </div>
     )
   }

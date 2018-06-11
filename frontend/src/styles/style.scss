@@ -1,10 +1,19 @@
 @import 'theme-colors';
-$theme-font: verdana, sans-serif;
+$theme-font: 'Open Sans, sans-serif';
 
 body {
-  font: $theme-font;
-  background-color: $themeColor-Light;
-  h1, h2 {
-      color: $themeColor-Dark
-  }
+  font-family: $theme-font;
+  color: $themeColor-Midnight;
+}
+h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#wwu h2 span {
+  color: $themeColor-Green;
+}
+#wfu h2 span {
+  color: $themeColor-Midnight;
 }
