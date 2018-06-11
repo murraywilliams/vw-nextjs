@@ -3,16 +3,30 @@ import Link from "next/link";
 import { Config } from "../config.js";
 
 const linkStyle = {
-    marginRight: 15
+    marginRight: 15,
+    color: 'white',
+    textDecoration: 'none',
 };
 const headerBarStyle = {
     color: 'rgb(255, 255, 255)',
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     padding: '20px',
     background: 'rgb(51, 63, 72)',
+}
+
+const tagLineStyle = {
+    maxWidth: 'none',
+    paddingLeft: '20px',
+    paddingBottom: '6px',
+    textTransform: 'uppercase',
+    fontSize: '16px',
+    lineHeight: 1,
+    position: 'relative',
+    flex: '0 0 auto',
+    margin: '0px'
 }
 
 class Menu extends Component {
@@ -50,12 +64,7 @@ class Menu extends Component {
 
     return(
       <div style={headerBarStyle}>
-          <div>
-            <Link href='/'>
-                <img src= alt=""/>
-            </Link>
-        </div>
-          <div>{menuItems}</div>
+         {menuItems}
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Menu from "../components/Menu.js";
 import Footer from "./Footer";
 
 const layoutStyle = {

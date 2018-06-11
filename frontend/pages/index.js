@@ -11,6 +11,7 @@ const headerImageStyle = {
 };
 const columnContainer = {
     display: 'flex',
+    minHeight: 'calc(100vh - 119px)'
 }
 const wwuColumnStyle = {
     display: 'flex',
@@ -108,7 +109,7 @@ class Index extends Component {
                 <div style={columnContainer}>
                     <div id="wwu" style={wwuColumnStyle}>
                         <div style={wwuInnerStyle}>
-                            <h2 dangerouslySetInnerHTML={{
+                            <h2 style={{marginBottom: '0'}} dangerouslySetInnerHTML={{
                                 __html: this.props.page.acf.wwu_title}}
                             />
                             <p style={{ color: 'white' }}>{this.props.page.acf.wwu_subtitle}</p>
@@ -117,7 +118,7 @@ class Index extends Component {
                     </div>
                     <div id="wfu" style={wfuColumnStyle}>
                         <div style={wfuInnerStyle}>
-                            <h2 dangerouslySetInnerHTML={{
+                            <h2 style={{marginBottom: '0'}} dangerouslySetInnerHTML={{
                                 __html: this.props.page.acf.wfu_title}}
                             />
                             <p style={{ color: 'white' }}>{this.props.page.acf.wfu_subtitle}</p>
