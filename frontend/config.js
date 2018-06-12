@@ -1,1 +1,1 @@
-export const Config = {apiUrl: 'https://production.ventureweb.com/gatsby'}
+export const Config = {apiUrl: 'https://production.ventureweb.com/nextjs/index.php'}
